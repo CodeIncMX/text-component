@@ -1,0 +1,9 @@
+@import '../scss/text.scss';
+
+body {
+  background-color: orange;
+}
+
+p {
+  @include text();
+} 

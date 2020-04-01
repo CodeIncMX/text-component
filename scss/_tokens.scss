@@ -1,0 +1,37 @@
+// HEADING DEFAULT VALUES
+
+$base__fontFamily: system-ui !default;
+$brand__whiteColor: #fff !default;
+$brand__blackColor: #000 !default;
+
+$text__color: (
+  slogan:     ( starts-in: $brand__whiteColor ),
+  sub-slogan: ( starts-in: $brand__whiteColor ),
+  title:      ( starts-in: $brand__blackColor ),
+  sub-title:  ( starts-in: $brand__blackColor ),
+  paragraph:  ( starts-in: $brand__blackColor )
+) !default;
+
+$text__fontSize: (
+  slogan:     ( starts-in: 38px, md: 64px ),
+  sub-slogan: ( starts-in: 14px, md: 21px ),
+  title:      ( starts-in: 32px, md: 62px ),
+  sub-title:  ( starts-in: 18px ),
+  paragraph:  ( starts-in: 16px )
+) !default;
+
+$text__textAlign: (
+  slogan:     ( starts-in: left   ),
+  sub-slogan: ( starts-in: left   ),
+  title:      ( starts-in: center ),
+  sub-title:  ( starts-in: center ),
+  paragraph:  ( starts-in: center )
+) !default;
+
+$text__fontFamily: (
+  slogan:     ( starts-in: $base__fontFamily ),
+  sub-slogan: ( starts-in: $base__fontFamily ),
+  title:      ( starts-in: $base__fontFamily ),
+  sub-title:  ( starts-in: $base__fontFamily ),
+  paragraph:  ( starts-in: $base__fontFamily )
+) !default;

@@ -1,0 +1,12 @@
+@import './tokens';
+@import '~@codeinc.mx/responsive-system/scss/responsive.scss';
+
+@mixin text($type: paragraph) {
+
+  @include set-property-in-active-breakpoints(color,        map-get($text__color,       $type));
+  @include set-property-in-active-breakpoints(font-size,    map-get($text__fontSize,    $type));
+  @include set-property-in-active-breakpoints(text-align,   map-get($text__textAlign,   $type));
+  @include set-property-in-active-breakpoints(font-family,  map-get($text__fontFamily,  $type));
+
+  @content;
+}
